@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_maptalks_docs=self.webpackChunkreact_maptalks_docs||[]).push([[3525],{2981:a=>{a.exports=JSON.parse('{"label":"hola","permalink":"/react-maptalks-doc/blog/tags/hola","allTagsPath":"/react-maptalks-doc/blog/tags","count":1}')}}]);
