@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://miguelonCoder.github.io/react-maptalks-doc/blog</id>
-    <title>React-Maptalks Blog</title>
+    <title>React Maptalks Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://miguelonCoder.github.io/react-maptalks-doc/blog"/>
-    <subtitle>React-Maptalks Blog</subtitle>
+    <subtitle>React Maptalks Blog</subtitle>
     <icon>https://miguelonCoder.github.io/react-maptalks-doc/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
