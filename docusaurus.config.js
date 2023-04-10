@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/oceanicNext');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'React-Maptalks',
-  tagline: 'Maptalks components for React',
+  title: 'React Maptalks',
+  tagline: 'create beautiful and powerful maps with the Maptalks library using reactive components',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -66,6 +66,19 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'WEB UNDER CONSTRUCTION! We still preparing something amazing for you',
+        backgroundColor: '#f7bc45',
+        textColor: '#091E42',
+        isCloseable: false,
+      },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: true,
+      },
       image: 'img/social-card.png',
       navbar: {
         title: 'React Maptalks',
@@ -80,8 +93,8 @@ const config = {
             position: 'left',
             label: 'Getting started',
           },
-          {to: '/docs/category/examples', label: 'Examples', position: 'left'},
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/docs/category/examples', label: 'Examples', position: 'left' },
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/miguelonCoder',
             //label: 'GitHub',
@@ -136,6 +149,19 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  plugins: [
+    async function myPlugin(context, options) {
+      return {
+        name: "docusaurus-tailwindcss",
+        configurePostCss(postcssOptions) {
+          // Appends TailwindCSS and AutoPrefixer.
+          postcssOptions.plugins.push(require("tailwindcss"));
+          postcssOptions.plugins.push(require("autoprefixer"));
+          return postcssOptions;
+        },
+      };
+    },
+  ],
 };
 
 module.exports = config;
